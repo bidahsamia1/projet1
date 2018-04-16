@@ -1,0 +1,16 @@
+package info;
+
+public class PC extends Produit {
+	private double CPU;
+	private int RAM;
+	public PC(int reference, String marque, double CPU, int RAM) {
+		super(reference, marque);
+		this.CPU = CPU;
+		this.RAM = RAM;
+	}
+
+	public String toString() {
+		return "PC [cpu=" + CPU + ", ram=" + RAM + ", toString()=" + super.toString() + "]";
+	} 
+
+}
