@@ -1,1 +1,18 @@
 bonsoir
+package tp2;
+
+public class PC extends Produit {
+	private int CPU , RAM;
+	public PC ( int refernce , int CPU ,int RAM , int nb_article, String marque ) {
+		super (nb_article , marque , reference  );
+		this.CPU=CPU;
+		this.RAM=RAM;
+		
+	}
+public String toString () {
+	String s= super.toString();
+	s+=" les caracteristiques "+CPU +","+RAM;
+	return s;
+}
+
+}
