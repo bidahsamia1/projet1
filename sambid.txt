@@ -14,3 +14,46 @@ public class PC extends Produit {
 	} 
 
 }
+package info;
+public class Produit {
+	private int reference;
+	private String marque;
+	private int nbarticles;
+	public Produit(int reference, String marque) {
+		this.reference = reference;
+		this.marque = marque;
+	}
+	public int getNbarticles() {
+		return nbarticles;
+	}
+	public void setNbarticles(int nbarticles) {
+		this.nbarticles = nbarticles;
+	}
+	public int getReference() {
+		return reference;
+	}
+	public String getMarque() {
+		return marque;
+	}
+
+	public String toString() {
+		return "Produit [reference=" + reference + ", marque=" + marque + "]";
+	}	
+public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Produit other = (Produit) obj;
+		if (marque == null) {
+			if (other.marque != null)
+				return false;
+		} else if (!marque.equals(other.marque))
+			return false;
+		if (reference != other.reference)
+			return false;
+		return true;
+}
+svp tu peux q1q m'aider de creer un code main
