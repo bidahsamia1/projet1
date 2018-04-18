@@ -13,6 +13,30 @@ public String toString () {
 	String s= super.toString();
 	s+=" les caracteristiques "+CPU +","+RAM;
 	return s;
-}
+}}
+"""""" main""
+package TestPg;
 
-}
+import info.*;
+import java.util.Scanner ;
+ 
+public class PgP {
+
+	public static void main(String[] args) {
+		Scanner x= new Scanner (System.in);
+		Produit q=new Produit("ph");
+		// TODO Auto-generated method stub
+		Produit p[]=new Produit [3];
+		
+		System.out.println ("donner produit");
+		p[0]=new Produit( x.nextInt(), x.next());
+		System.out.println ("donner PC");
+		p[1]= new PC (x.nextInt(), x.next(), x.nextDouble(), x.nextInt());
+		System.out.println ("donner PC");
+		p[2]= new PC (x.nextInt(), x.next(), x.nextDouble(), x.nextInt() );
+		for(int i=0 ; i<3 ; i++) {
+		if( p[i].equals(q)) {
+		System.out.println ( "les info "+ p[i].toString());
+			}
+			}
+		
