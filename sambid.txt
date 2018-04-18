@@ -82,3 +82,52 @@ public class PgP {
 			}
 			}
 			voila le main de ce programme..
+			aaaa c'est deja asma ba3thetou 
+                         qui peux coder tp6 les filles svp
+			 voila le code 
+			 package tp6;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Tab {
+
+	public static void main(String[] args) {
+	
+ArrayList <Double> l =new  ArrayList <Double>(5);
+Scanner x=new Scanner (System.in);
+
+
+	l.add(1.0);
+	l.add(1.5);
+	l.add(1.6);
+	l.add(2.0);
+	l.add(4.0);
+	System.out.println(l); 
+	double a;
+	System.out.println("entrer un double");
+a=x.nextDouble();
+
+	int c;
+	c=l.indexOf(a);
+if (c!=-1){
+	System.out.println(c);
+	
+}
+else {
+	int i=0;
+	while(i!=l.size()) {
+		if(a<l.get(i))
+			break;
+		i++;
+	System.out.println(" la valeur de i est "+ i);
+	System.out.println(" la valeur de liste est "+ l.get(i));	
+	
+	}
+	l.add(i, a);
+	
+}
+System.out.println(l);
+
+	
+
+}
+}
