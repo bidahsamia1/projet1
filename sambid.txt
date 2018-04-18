@@ -82,3 +82,55 @@ public class PgP {
 			}
 			}
 			voila le main de ce programme..
+			Voila un exemple de linkedlist 
+			executable 
+			package tp7;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+
+
+
+
+public class Testlist {
+
+	public static void main(String[] args) {
+	LinkedList<Integer> l1= new LinkedList <Integer>();
+	 Scanner x=new Scanner (System.in);
+	int n;
+	 do { 
+		 System.out.println("entrer un entier");
+	 n=x.nextInt();
+	 }
+	 while (n<2);
+
+	 
+	 
+	 for( int i=2 ; i<=n; i++) {
+		l1.add(i);
+	 }
+	 System.out.println(l1);
+	 
+	 
+	 for(int i=2 ; i<l1.size() ;i++) {
+		int j;
+	
+	 if (l1.contains(i)==true) {
+		 
+		j=2;
+		while( j*i <= n) {
+			l1.remove(new Integer(j*i));
+		
+	 j++;
+	 }	 
+	 }
+	 
+	 }
+	 System.out.println(l1.size());
+	 System.out.println(l1);
+
+
+
+ }
+	
+}
