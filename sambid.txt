@@ -56,4 +56,4 @@ public boolean equals(Object obj) {
 			return false;
 		return true;
 }
-svp tu peux q1q m'aider de creer un code main
+svp q1q m'aider de creer un code main 
